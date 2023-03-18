@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>Report My Debt</title>
+  </head>
+  <body class="bg-dark text-lightGray">
+    <main class="m-3 flex flex-col items-center space-y-6">
+      <section class="w-full flex flex-col items-center">
+        <p class="text-lg text-center py-3">
+          Fatura do mês do C6 Bank no formato .csv
+        </p>
+        <input
+          type="file"
+          accept=".csv"
+          id="input"
+          class="file-input file-input-primary w-full max-w-lg"
+        />
+      </section>
+
+      <section
+        id="total"
+        class="bg-darkGray border border-gray w-full max-w-lg p-1 space-y-1"
+      ></section>
+
+      <section class="w-full max-w-5xl" id="next-months"></section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
